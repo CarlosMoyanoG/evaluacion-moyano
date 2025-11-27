@@ -5,3 +5,12 @@
 .estilo-menor{
     border-color: red;
 }
+
+.div-usuario div{
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
