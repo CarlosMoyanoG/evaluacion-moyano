@@ -1,0 +1,18 @@
+<h2>Lista Usuarios</h2>
+
+<form>
+    <div>
+        <label>Ingrese la cantidad de usuarios a cargar:</label>
+        <input type="text" name="nombre" required>
+    </div>
+
+    <button (click)="guardarUsuarios()" type="submit">Enviar</button>
+</form>
+
+
+<div class="div-usuarios" *ngFor="let p of listaUsuarios">
+    <div>{{ p.name.title }} {{p.name.first}} {{p.name.last}}</div>
+    <div> {{ p.dob.age }} </div>
+    <div><img [src]="p.picture.large" alt="foto" width="50"></div>
+    <div><button (click)="guardarUsuarios()">Auditar</button></div>
+</div>
